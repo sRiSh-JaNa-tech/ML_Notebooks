@@ -686,7 +686,7 @@ class Multi_Perceptron{
 int main() {
     try {
         auto start = high_resolution_clock::now();
-        string link = "C:/Users/srish/Desktop/ML in C++/Iris.csv";
+        string link = ""; // <--- Add the file location here 
         FileStream file(link);
         file.getFile();
         file.drop({"Id"});
@@ -722,3 +722,4 @@ int main() {
     }
     return 0;
 }
+
